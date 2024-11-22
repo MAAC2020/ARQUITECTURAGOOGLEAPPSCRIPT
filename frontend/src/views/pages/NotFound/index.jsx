@@ -1,6 +1,13 @@
 import { Container, Row, Col, Button } from "react-bootstrap"; // Importamos componentes de Bootstrap
+import { useNavigate } from "react-router-dom"; // Importamos useNavigate para redirigir
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
+  const handleGoHome = () => {
+    navigate("/"); // Redirige a la ruta principal
+  };
+
   return (
     <>
       <Container
@@ -15,7 +22,7 @@ const NotFound = () => {
               <p className="lead mb-4">
                 Lo sentimos, la página que estás buscando no existe.
               </p>
-              <Button variant="primary" href="/" className="mt-3">
+              <Button variant="primary" onClick={handleGoHome} className="mt-3">
                 Regresar al Inicio
               </Button>
             </div>
