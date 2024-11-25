@@ -15,24 +15,24 @@ const TablaContratos = () => {
   }, []);
 
   //columnas a utilizar de la tabla
-  const columns = [
-    {
-      name: "Numero de Contrato",
-      selector: (row) => row.title,
-    },
-    {
-      name: "Nombres",
-      selector: (row) => row.year,
-    },
-    {
-      name: "Cedula",
-      selector: (row) => row.year,
-    },
-    {
-      name: "Ciudad De Expedición",
-      selector: (row) => row.year,
-    },
-  ];
+  // const columns = [
+  //   {
+  //     name: "Numero de Contrato",
+  //     selector: (row) => row.title,
+  //   },
+  //   {
+  //     name: "Nombres",
+  //     selector: (row) => row.year,
+  //   },
+  //   {
+  //     name: "Cedula",
+  //     selector: (row) => row.year,
+  //   },
+  //   {
+  //     name: "Ciudad De Expedición",
+  //     selector: (row) => row.year,
+  //   },
+  // ];
 
   // const data = [
   //   {
@@ -216,9 +216,9 @@ const TablaContratos = () => {
             </table>
           </div>
 
-          <h1>Tabla Contratos</h1>
+          {/* <h1>Tabla Contratos</h1>
 
-          {data.length > 0 && <DataTable columns={columns} data={data} />}
+          {data.length > 0 && <DataTable columns={columns} data={data} />} */}
         </Col>
       </Row>
     </Container>
