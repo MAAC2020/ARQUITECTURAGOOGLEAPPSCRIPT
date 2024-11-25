@@ -1,9 +1,7 @@
-import FormularioRegistro from "./components/FormularioRegistro"
+import FormRegistro from "./components/Form/FormRegistro";
 
 const index = () => {
-  return (
-    <FormularioRegistro/>
-  );
+  return <FormRegistro />;
 };
 
 export default index;

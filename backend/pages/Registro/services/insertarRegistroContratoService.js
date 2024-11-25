@@ -10,12 +10,12 @@ function insertarRegistroContratoService(argumentos) {
     const { idBaseDeDatos } = idDataBase;
     const { tablaContrato } = nameTables;
 
-    console.log("ARGUMENTOS");
+    console.log("<<<ARGUMENTOS>>");
     console.log(argumentos);
 
-    let [formData] = argumentos;
+    let { formData } = argumentos;
 
-    formData = JSON.stringify(formData);
+    // formData = JSON.stringify(formData);
     console.log("Datos a insertar");
     console.log(formData);
 

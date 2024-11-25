@@ -1,9 +1,7 @@
-import TablaContratos from "./components/TablaContratos"
+import TablaContratos from "./components/Table/TablaContratos";
 
 const Contratos = () => {
-  return (
-    <TablaContratos/>
-  )
-}
+  return <TablaContratos />;
+};
 
 export default Contratos;

@@ -13,7 +13,7 @@ function InsertService(argumentos) {
     const [sheetHoja] = asignarNombreHojaDeCalculo(nombreSheet, idBaseDeDatos);
 
     //data convertida
-    let data = JSON.parse(formData);
+    let data = formData;
 
     //obtener la primera fila de la tabla
     //[columna1,columna2,columna3]

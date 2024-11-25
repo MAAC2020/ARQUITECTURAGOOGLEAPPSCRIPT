@@ -9,3 +9,5 @@ export const insertarRegistroContratoController = async (datos) => {
     throw error;
   }
 };
+
+

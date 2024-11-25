@@ -5,8 +5,9 @@ lo cual puede integrarse con los controladores para manejar la lógica de datos 
 
 /* eslint-disable no-undef */
 //@param {String} funcion: es el nombre de la funcion a llamar del backend
-//@param {All} argumentos: puede recibir cualquier tipo de argumentos separados por comas
-const api = async (funcion, ...argumentos) => {
+//@param {Object} argumentos: se pasa un objeto que se envia al backend, recibe de 1 a muchos parametros
+//es importante que sea un objecto
+const api = async (funcion, argumentos) => {
   let promesa = new Promise((resolve, reject) => {
     google.script.run
       .withSuccessHandler((el) => {
